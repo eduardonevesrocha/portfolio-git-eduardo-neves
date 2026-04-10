@@ -11,6 +11,14 @@ def pedir_nota(label):
 def calcular_media(notas, pesos):
     return sum(n * p for n, p in zip(notas, pesos)) / sum(pesos)
 
+def situacao(media):
+    if media >= 7.0:
+        return "APROVADO(A) ✓"
+    elif media >= 4.0:
+        return "PROVA FINAL"
+    else:
+        return "REPROVADO(A) ✗"
+
 def main():
     print("=" * 40)
     print("  Calculadora de Medias - CIn UFPE")
@@ -26,9 +34,24 @@ def main():
     p3 = pedir_nota("Nota P3")
 
     media = calcular_media([p1, p2, p3], [1, 1, 1])
+    status = situacao(media)
 
     print()
-    print(f"  Media de {disciplina}: {media:.2f}")
+    print("-" * 40)
+    print(f"  {disciplina}")
+    print(f"  Media: {media:.2f}  |  {status}")
+    print("-" * 40)
+
+    if status == "PROVA FINAL":
+        print()
+        pf = pedir_nota("Nota Prova Final")
+        media_final = (media + pf) / 2
+        status_final = "APROVADO(A) ✓" if media_final >= 5.0 else "REPROVADO(A) ✗"
+        print()
+        print(f"  Media Final: {media_final:.2f}  |  {status_final}")
+        print("-" * 40)
+
+    print()
 
 if __name__ == "__main__":
     main()
