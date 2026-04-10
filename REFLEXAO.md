@@ -1,8 +1,8 @@
-\# Reflexão
+# Reflexão
 
 
 
-\## O que foi difícil
+## O que foi difícil
 
 
 
@@ -18,7 +18,7 @@ Também tive certa dificuldade em pensar nos commits de forma mais semântica. �
 
 
 
-\## O que ficou claro
+## O que ficou claro
 
 
 
@@ -34,7 +34,7 @@ Além disso, ficou bem mais claro para mim que conflito de merge não é necessa
 
 
 
-\## O que ainda é confuso
+## O que ainda é confuso
 
 
 
