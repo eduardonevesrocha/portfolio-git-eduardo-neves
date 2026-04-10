@@ -31,3 +31,8 @@ Para executar:
 
 ```bash
 python script.py
+```
+
+## Observação final
+
+Mesmo sendo um projeto simples, ele foi importante para eu entender melhor como o Git funciona na prática, principalmente na parte de branches, merges e conflitos.
